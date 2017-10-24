@@ -4582,7 +4582,7 @@ msgstr "Lien"
 
 #: wp-includes/post-formats.php:93
 msgctxt "Post format"
-msgid "Gallery"
+msgid "gallery.php"
 msgstr "Galerie"
 
 #: wp-includes/post-formats.php:92
@@ -5392,7 +5392,7 @@ msgid "Reverse order"
 msgstr "Inverser l’ordre"
 
 #: wp-includes/media.php:3555
-msgid "Add to Gallery"
+msgid "Add to gallery.php"
 msgstr "Ajouter à la galerie"
 
 #: wp-includes/media.php:3554
@@ -5408,15 +5408,15 @@ msgid "Insert gallery"
 msgstr "Insérer la galerie"
 
 #: wp-includes/media.php:3551
-msgid "&#8592; Cancel Gallery"
+msgid "&#8592; Cancel gallery.php"
 msgstr "&#8592; Annuler la galerie"
 
 #: wp-includes/media.php:3550
-msgid "Edit Gallery"
+msgid "Edit gallery.php"
 msgstr "Modifier la galerie"
 
 #: wp-includes/media.php:3549
-msgid "Create Gallery"
+msgid "Create gallery.php"
 msgstr "Créer une galerie"
 
 #: wp-includes/media.php:3542
@@ -5762,7 +5762,7 @@ msgid "Columns"
 msgstr "Colonnes"
 
 #: wp-includes/media-template.php:715
-msgid "Gallery Settings"
+msgid "gallery.php Settings"
 msgstr "Réglages de la galerie"
 
 #: wp-includes/media-template.php:697 wp-includes/media-template.php:772

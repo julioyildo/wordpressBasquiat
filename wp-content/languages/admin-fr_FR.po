@@ -5685,7 +5685,7 @@ msgid "Update gallery settings"
 msgstr "Mettre à jour les réglages de galerie"
 
 #: wp-admin/includes/media.php:2317
-msgid "Gallery columns:"
+msgid "gallery.php columns:"
 msgstr "Colonnes de galerie&nbsp;:"
 
 #: wp-admin/includes/media.php:2302
@@ -5866,11 +5866,11 @@ msgid "\"%1$s\" from %2$s by %3$s."
 msgstr "<i>%1$s</i> tiré de <i>%2$s</i> par %3$s."
 
 #: wp-admin/includes/media.php:62
-msgid "Gallery (%s)"
+msgid "gallery.php (%s)"
 msgstr "Galerie (%s)"
 
 #: wp-admin/includes/media.php:20
-msgid "Gallery"
+msgid "gallery.php"
 msgstr "Galerie"
 
 #: wp-admin/includes/media.php:19
