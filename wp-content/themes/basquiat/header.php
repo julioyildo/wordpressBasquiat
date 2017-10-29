@@ -13,7 +13,7 @@
     <!-- Execution de la fonction wp_head() obligatoire ! -->
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> >
 <header id="header">
     <!-- Tout le contenu de l entête de mon site -->
     <?php
