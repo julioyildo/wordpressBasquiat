@@ -5,11 +5,11 @@ function ajout_scripts() {
 
 
 // enregistrement d'un nouveau script
-wp_register_script('bootstrap_script', JS_URL.'/bootstrap.min.js', array('jquery'),'1.1', true);
-wp_enqueue_script('bootstrap_script');
+//wp_register_script('bootstrap_script', JS_URL.'/bootstrap.min.js', array('jquery'),'1.1', true);
+//wp_enqueue_script('bootstrap_script');
 
 
-wp_register_script('main_js', JS_URL.'/main.js', array('jquery'),'1.1', true);
+wp_register_script('main_js', JS_URL.'/main.min.js', array('jquery'),'1.1', true);
 wp_enqueue_script('main_js');
 
 
@@ -29,7 +29,7 @@ wp_enqueue_style( 'bootstrap_style' );
 
 
 // enregistrement des styles
-wp_register_style( 'main_style', CSS_URL.'/main.css' );
+wp_register_style( 'main_style', CSS_URL.'/style.min.css' );
 wp_enqueue_style( 'main_style' );
 
 
