@@ -1,4 +1,3 @@
-console.log('yaw');
 
 var menu = document.querySelector(".menu-wrapper");
 console.log(menu);

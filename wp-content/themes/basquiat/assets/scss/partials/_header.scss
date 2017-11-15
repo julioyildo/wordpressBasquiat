@@ -1,0 +1,55 @@
+body {
+  background: #212121;
+  color: #fefefe;
+  width: 100%;
+}
+.container {
+  position: relative;
+  width: 80vw;
+  margin: 0 auto;
+}
+  header {
+    top: 55px;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+  }
+
+  #content {
+    height: auto;
+  }
+
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+
+  .menu-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background: #fefefe;
+    z-index: 0;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-wrapper div {
+    marin: auto;
+  }
+
+
+
+  .menu-hidden {
+    display: none;
+  }
