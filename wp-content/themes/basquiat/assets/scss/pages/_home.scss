@@ -79,7 +79,7 @@
     justify-content: center;
     height: auto;
     position: relative;
-    padding: 100px 0;
+    padding: 200px 0;
     font-family: 'Abril Fatface', cursive;
     background-image: url("../../images/intro.svg") ;
     background-repeat: no-repeat;
@@ -90,57 +90,123 @@
     width: 505px;
     font-size: 48px;
     text-align: center;
+    padding: 90px 0;
 
   }
 
 
+  // PROFILE SECTIONS
+
+.home-profile {
+  position: relative;
+  width: 100%;
+  background: #EEC901;
+  padding: 100px 0;
+  margin-bottom: 200px;
+}
+
+.home-profile .home-profile-text-wrapper {
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //height: 700px;
+  color: #212121;
+  font-family: 'Poppins', sans-serif;
+  //padding: 48px 20px 48px 100px;
+  vertical-align: top;
+  z-index: -1;
+}
+.home-profile .home-profile-text-wrapper > div  {
+  //width: 539px;
+  //height: 271px;
+
+}
 
 
-  .bio-content-wrapper {
-    text-align: center;
+.profil-content-wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+
+.home-profile .home-profile-text-wrapper > div h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  font-family: 'Abril Fatface', cursive;
+}
+
+
+.home-profile .home-profile-text-wrapper > div p {
+  font-size: 18px;
+  line-height: 35px;
+  max-width: 700px;
+  margin-bottom: 120px;
+}
+
+.home-profile .profil-content-wrapper
+.home-profile-text-wrapper .thumbnail {
+  position: absolute;
+  right: 10%;
+  bottom:  0;
+  height: 900px;
+  z-index: 1;
+   img {
+     height:100%;
+     width: auto;
+   }
+}
+
+
+
+
+// PErceverant SECTIONS
+
+
+
+  .home-perceverant {
+    position: relative;
+
+  }
+
+
+  .perceverant-content-wrapper {
     font-size: 0;
     padding: 100px 0;
   }
-  .home-biography .thumbnail {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    vertical-align: top;
-    transform: translateX(80px) translateY(-80px);
-    z-index: 1;
-  }
-  .home-biography .home-bio-text-wrapper {
-    display: inline-block;
-    width: 700px;
-    height: 700px;
-    background: #EEC901;
-    color: #212121;
-    font-family: 'Poppins', sans-serif;
+
+
+  .home-perceverant .home-perceverant-text-wrapper {
     //padding: 48px 20px 48px 100px;
-    vertical-align: top;
-    text-align: left;
     z-index: -1;
   }
 
-  .home-biography .home-bio-text-wrapper > div  {
+
+  .home-perceverant .home-perceverant-text-wrapper > div  {
     //width: 539px;
     //height: 271px;
-    margin-top: 66px;
-    margin-left: 125px;
-    margin-right: 30px;
-
-
-
   }
 
+  .home-perceverant .thumbnail {
+    //display: inline-block;
+    max-width: 60%;
+    height: auto;
+    vertical-align: top;
+    //transform: translateX(80px) translateY(-80px);
+    z-index: 1;
 
-
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
 
 
   .home-biography .home-bio-text-wrapper > div h1 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 100px;
+    font-family: 'Abril Fatface', cursive;
   }
 
 
@@ -154,14 +220,19 @@
 
 
 
-  .home-biography .thumbnail-2 {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    vertical-align: top;
-    transform: translateX(-80px) translateY(100px);
-    z-index: 1;
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   .home-biography .home-bio-text-wrapper-2 {
     display: inline-block;
     width: 700px;
@@ -187,6 +258,7 @@
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 100px;
+  font-family: 'Abril Fatface', cursive;
 }
 
 .home-biography .home-bio-text-wrapper-2 p {

@@ -22,30 +22,18 @@ get_header() ?>
                     <?php the_post_thumbnail(); ?>
                 </div>
         </section>
-        <div class="container">
-            <section class="citation" style="color:white;">
-                <?php if( get_field('introduction') ): ?>
-                    <p class="citation__content"><?php the_field('introduction'); ?></p>
-                <?php endif; ?>
-            </section>
+        <section class="citation" style="color:white;">
+            <?php if( get_field('introduction') ): ?>
+                <p class="citation__content"><?php the_field('introduction'); ?></p>
+            <?php endif; ?>
+        </section>
 
-            <section class="home-biography">
+        <section class="home-profile">
 
-                <div class="bio-content-wrapper">
-                    <div class="thumbnail">
-                        <?php
+            <div class="profil-content-wrapper ">
 
-                        $image = get_field('biography_image');
-
-                        if( !empty($image) ): ?>
-
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
-                        <?php endif; ?>
-
-                    </div>
-                    <div class="home-bio-text-wrapper">
-                        <div>
+                <div class="home-profile-text-wrapper ">
+                    <div class="">
 
                         <?php if( get_field('title_biography') ): ?>
                             <h1><?php the_field('title_biography'); ?></h1>
@@ -54,38 +42,40 @@ get_header() ?>
                         <?php if( get_field('content_biography') ): ?>
                             <p><?php the_field('content_biography'); ?></p>
                         <?php endif; ?>
-                        </div>
-
                     </div>
-
-                </div>
-            </section>
-        <!-- PERCEVERANT SECTION-->
-            <section class="home-biography">
-
-                <div class="bio-content-wrapper">
-                    <div class="home-bio-text-wrapper-2">
-                        <div>
-
-                            <?php if( get_field('title_perceverant') ): ?>
-                                <h1><?php the_field('title_perceverant'); ?></h1>
-                            <?php endif; ?>
-
-                            <?php if( get_field('content_perceverant') ): ?>
-                                <p><?php the_field('content_perceverant'); ?></p>
-                            <?php endif; ?>
-                        </div>
-
-                    </div>
-                    <div class="thumbnail-2">
+                    <div class="thumbnail">
                         <?php
 
-                        $image = get_field('perceverant_image');
+                        $image = get_field('biography_image');
 
                         if( !empty($image) ): ?>
 
                             <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endif; ?>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="container">
+
+
+        <!-- PERCEVERANT SECTION-->
+            <section class="home-perceverant">
+
+                <div class="perceverant-content-wrapper">
+                    <div class="home-perceverant-text-wrapper">
+                        <div class="thumbnail">
+                            <?php
+
+                            $image = get_field('perceverant_image');
+
+                            if( !empty($image) ): ?>
+
+                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             </section>
