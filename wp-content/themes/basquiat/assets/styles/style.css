@@ -250,13 +250,6 @@ a {
 .home-perceverant {
   position: relative; }
 
-.perceverant-content-wrapper {
-  font-size: 0;
-  padding: 100px 0; }
-
-.home-perceverant .home-perceverant-text-wrapper {
-  z-index: -1; }
-
 .home-perceverant .thumbnail {
   max-width: 60%;
   height: auto;
@@ -265,17 +258,34 @@ a {
     width: 100%;
     height: auto; }
 
-.home-perceverant .home-perceverant-text-wrapper > div {
-  width: 539px;
+.home-perceverant .perceverant-content-wrapper
+.home-perceverant-text-wrapper {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  background: #eec901;
+  width: 55%;
+  max-height: 470px;
+  opacity: .9;
+  z-index: 10;
+  color: #000;
+  padding: 100px 0; }
+
+.home-perceverant .perceverant-content-wrapper
+.home-perceverant-text-wrapper div {
+  width: 70%;
+  margin: auto;
   height: 271px; }
 
-.home-biography .home-bio-text-wrapper > div h1 {
+.home-perceverant .perceverant-content-wrapper
+.home-perceverant-text-wrapper div h1 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 100px;
   font-family: 'Abril Fatface', cursive; }
 
-.home-biography .home-bio-text-wrapper > div p {
+.home-perceverant .perceverant-content-wrapper
+.home-perceverant-text-wrapper div p {
   font-size: 18px;
   line-height: 35px; }
 

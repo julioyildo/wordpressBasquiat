@@ -76,8 +76,8 @@
           <file leaf-file-name="front-page.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/front-page.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="67" column="55" lean-forward="false" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+                <state relative-caret-position="545">
+                  <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
                   <folding>
                     <element signature="e#6#32#0#PHP" expanded="true" />
                   </folding>
@@ -132,8 +132,8 @@
           <file leaf-file-name="_home.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/assets/scss/pages/_home.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="603">
-                  <caret line="202" column="1" lean-forward="false" selection-start-line="202" selection-start-column="1" selection-end-line="202" selection-end-column="1" />
+                <state relative-caret-position="302">
+                  <caret line="191" column="21" lean-forward="true" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -316,12 +316,12 @@
       <workItem from="1507724745698" duration="742000" />
       <workItem from="1509305532006" duration="6557000" />
       <workItem from="1510606838924" duration="13061000" />
-      <workItem from="1510696186780" duration="14561000" />
+      <workItem from="1510696186780" duration="16164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34921000" />
+    <option name="totallyTimeSpent" value="36524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -761,8 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="55" lean-forward="false" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
+        <state relative-caret-position="545">
+          <caret line="85" column="47" lean-forward="true" selection-start-line="85" selection-start-column="47" selection-end-line="85" selection-end-column="47" />
           <folding>
             <element signature="e#6#32#0#PHP" expanded="true" />
           </folding>
@@ -771,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scss/pages/_home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="202" column="1" lean-forward="false" selection-start-line="202" selection-start-column="1" selection-end-line="202" selection-end-column="1" />
+        <state relative-caret-position="302">
+          <caret line="191" column="21" lean-forward="true" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
           <folding />
         </state>
       </provider>

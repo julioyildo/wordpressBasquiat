@@ -65,17 +65,18 @@ get_header() ?>
             <section class="home-perceverant">
 
                 <div class="perceverant-content-wrapper">
+
+                    <div class="thumbnail">
+                        <?php
+
+                        $image = get_field('perceverant_image');
+
+                        if( !empty($image) ): ?>
+
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                        <?php endif; ?>
+                    </div>
                     <div class="home-perceverant-text-wrapper">
-                        <div class="thumbnail">
-                            <?php
-
-                            $image = get_field('perceverant_image');
-
-                            if( !empty($image) ): ?>
-
-                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                            <?php endif; ?>
-                        </div>
                         <div>
 
                             <?php if( get_field('title_perceverant') ): ?>
