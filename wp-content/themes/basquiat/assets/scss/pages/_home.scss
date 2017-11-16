@@ -182,16 +182,11 @@
   }
 
 
-  .home-perceverant .home-perceverant-text-wrapper > div  {
-    //width: 539px;
-    //height: 271px;
-  }
 
   .home-perceverant .thumbnail {
     //display: inline-block;
     max-width: 60%;
     height: auto;
-    vertical-align: top;
     //transform: translateX(80px) translateY(-80px);
     z-index: 1;
 
@@ -201,6 +196,11 @@
     }
   }
 
+
+.home-perceverant .home-perceverant-text-wrapper > div  {
+  width: 539px;
+  height: 271px;
+}
 
   .home-biography .home-bio-text-wrapper > div h1 {
     font-size: 24px;

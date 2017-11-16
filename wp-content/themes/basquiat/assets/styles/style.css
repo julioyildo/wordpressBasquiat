@@ -260,11 +260,14 @@ a {
 .home-perceverant .thumbnail {
   max-width: 60%;
   height: auto;
-  vertical-align: top;
   z-index: 1; }
   .home-perceverant .thumbnail img {
     width: 100%;
     height: auto; }
+
+.home-perceverant .home-perceverant-text-wrapper > div {
+  width: 539px;
+  height: 271px; }
 
 .home-biography .home-bio-text-wrapper > div h1 {
   font-size: 24px;

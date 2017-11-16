@@ -76,6 +76,16 @@ get_header() ?>
                                 <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                             <?php endif; ?>
                         </div>
+                        <div>
+
+                            <?php if( get_field('title_perceverant') ): ?>
+                                <h1><?php the_field('title_perceverant'); ?></h1>
+                            <?php endif; ?>
+
+                            <?php if( get_field('content_perceverant') ): ?>
+                                <p><?php the_field('content_perceverant'); ?></p>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
             </section>
