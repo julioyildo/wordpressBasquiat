@@ -28,6 +28,10 @@
             <img src="<?= IMAGES_URL;?>/menu-icon.png" alt="">
         </div>
         <div class="menu-wrapper menu-hidden">
+            <div class="menu-wrapper__cross">
+                <div></div>
+            </div>
+            <div class="menu-wrapper__list">
             <?php
             $args=array(
                 'theme_location' => 'header', // nom du slug
@@ -38,6 +42,7 @@
             );
             wp_nav_menu($args);
             ?>
+            </div>
         </div>
     </header>
 </div>

@@ -35,22 +35,31 @@ body {
 
   .menu-wrapper {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: 10px;
+    bottom:30px;
     width: 40%;
     height: 100vh;
     background: #fefefe;
-    z-index: 0;
+    z-index: 50;
     color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .menu-wrapper div {
+  .menu-wrapper  .menu-wrapper__list {
     marin: auto;
   }
 
+  .menu-wrapper__cross {
+    height: 50px;
+    width: 50px;
+    background: #000;
+    position: absolute;
+    right: 70px;
+    top: 50px;
+  }
 
 
   .menu-hidden {

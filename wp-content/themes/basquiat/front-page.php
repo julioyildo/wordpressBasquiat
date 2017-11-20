@@ -23,7 +23,9 @@ get_header() ?>
                 </div>
         </section>
         <section class="citation" style="color:white;">
+            <p class="citation__decoration">[...]</p>
             <?php if( get_field('introduction') ): ?>
+
                 <p class="citation__content"><?php the_field('introduction'); ?></p>
             <?php endif; ?>
         </section>
@@ -138,34 +140,24 @@ get_header() ?>
             <div class="history__bkgImage">
                 <img src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
             </div>
-            <div class="history__titleBkg">
-                Galerie photo
-            </div>
+
+
+            <?php if( get_field('title_galerie') ): ?>
+                <div class="history__titleBkg">
+                    <?php the_field('title_galerie'); ?>
+                </div>
+            <?php endif; ?>
+
+
             <div class="history__slider">
                 <div class="slider__description container">
-                        <h3 class="slider__title">Galerie photo</h3>
+                    <?php if( get_field('title_galerie') ): ?>
+                        <h3 class="slider__title"><?php the_field('title_galerie'); ?></h3>
+                    <?php endif; ?>
 
-                        <p class="slider__paragraph">
-                            La carrière de Basquiat se divise en trois périodes spécifiques et particulièrement significatives.
-                            <br>
-                            <br>
-
-                            Durant la première, <strong class="colored">entre 1980 et 1982,</strong> l'artiste démontre son <strong>obsession pour la mort de l'homme</strong> en peignant, la plupart du temps sur toile, des représentations de <strong>silhouettes squelettiques ainsi que des visages</strong> s'apparentant à des masques.
-                            Aussi, il peint en s'inspirant de ce qu'il voit dans la rue : enfants, voitures, graffitis, pauvreté, etc.
-                            <br>
-
-                            En 1982, il est invité à participer à une exposition avec plusieurs autres artistes émergeants tels que <strong> Julian Schnabel, Francesco Clemente et David Salle</strong>. D'ailleurs, Schnabel, réalisera en 1996 le long métrage biographique intitulé Basquiat, en l'honneur de son ami.
-                            <br>
-                            <br>
-
-                            <strong class="colored">De 1982 à 1985,</strong> l'artiste révèle son intérêt pour <strong>son identité noire et son histoire</strong> en représentant des personnages noirs historiques ou contemporains faisant figure de proue ainsi que les évènements qui en découlent.
-                            Son travail se compose essentiellement de peintures sur panneaux multiples, pleines de superpositions d'éléments, allant de l'écriture au collage, par exemple.
-                            <br>
-                            <br>
-                            La troisième et dernière période s'échelonne sur deux ans : <strong class="colored">de 1986 à 1988, année de sa mort.</strong> Basquiat peint en utilisant des techniques, des styles et des éléments jusque là jamais utilisés dans son oeuvre. <strong>L'influence de l'héroïne</strong>, dont il dépend, est très palpable. En février 1987, <strong>la mort de Andy Warhol</strong> vient bouleverser le coeur et l'âme de Basquiat , déjà en un très mauvais état suite à ses abus d'héroïne. <strong>Le jeune homme n'est plus le même suite à ces évènements.</strong> Son sentiment d'être incompris s'encre d'avantage dans sa vie quotidienne : seul Warhol savait comment le toucher.
-
-
-                        </p>
+                    <?php if( get_field('description_gallerie') ): ?>
+                        <p class="slider__paragraph"><?php the_field('description_gallerie'); ?></p>
+                    <?php endif; ?>
                 </div>
 
                 <div class="slider__elements">
@@ -179,12 +171,12 @@ get_header() ?>
 
                         <div class="slider__elSlide">
                             <div class="slide__filter"></div>
-                            <img src="<?php echo IMAGES_URL?>/galerie1.png" alt="artwork">
+                            <img src="<?php echo IMAGES_URL?>/galerie2.png" alt="artwork">
                         </div>
 
                         <div class="slider__elSlide">
                             <div class="slide__filter"></div>
-                            <img src="<?php echo IMAGES_URL?>/galerie1.png" alt="artwork">
+                            <img src="<?php echo IMAGES_URL?>/galerie3.png" alt="artwork">
                         </div>
                 </div>
 
@@ -196,6 +188,7 @@ get_header() ?>
         <!-- ACTUALITY-->
         <section class="actuality">
             <div class="actuality__direction container">
+
                 <div class="actuality__directionText"> Voir la galerie</div>
                 <div class="actuality__directionArrow">
                     <img src="<?php echo IMAGES_URL?>/arrow-right.svg" >
@@ -205,11 +198,15 @@ get_header() ?>
             <div class="actuality__bkgImage">
                 <img src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
             </div>
+            <?php if( get_field('title_actuality') ): ?>
             <div class="actuality__titleBkg">
-                Actuality
+                <?php the_field('title_actuality'); ?>
             </div>
+            <?php endif; ?>
             <div class="container">
-                <h3 class="actuality__title slider__title">Actualités</h3>
+                <?php if( get_field('title_actuality') ): ?>
+                    <h3 class="actuality__title slider__title"><?php the_field('title_actuality'); ?></h3>
+                <?php endif; ?>
                 <div class="actulity__articlesWrapper row">
 
                     <div class="actuality__articles card col-4 " style="width: 20rem;">

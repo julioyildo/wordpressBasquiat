@@ -168,7 +168,7 @@ a {
 
 .intro__content {
   position: relative;
-  z-index: 10; }
+  z-index: 2; }
 
 .intro__content h1 {
   color: #fefefe;
@@ -201,11 +201,15 @@ a {
   background-repeat: no-repeat;
   background-position: center; }
 
+.citation__decoration {
+  text-align: center;
+  font-size: 2rem; }
+
 .citation__content {
   width: 505px;
   font-size: 48px;
   text-align: center;
-  padding: 90px 0; }
+  padding: 40px 0; }
 
 .home-profile {
   position: relative;
@@ -391,6 +395,14 @@ a {
   padding-bottom: 52px;
   line-height: 1.3; }
 
+.slider__description > p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  line-height: 1.3; }
+
+.slider__description > p:last-child {
+  padding-bottom: 52px; }
+
 .slider__paragraph strong {
   font-weight: bold; }
 
@@ -419,20 +431,23 @@ a {
   position: relative;
   width: 300px;
   height: 600px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  overflow: hidden;
+  /*
+  .slide__filter{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    position: absolute;
+    z-index: 10;
+  }*/ }
   .slider__elSlide:nth-child(1) {
     top: 230px; }
   .slider__elSlide:nth-child(2) {
     top: 150px; }
   .slider__elSlide:nth-child(3) {
     top: 60px; }
-  .slider__elSlide .slide__filter {
-    width: 100%;
-    height: 100%;
-    background: #000;
-    opacity: .5;
-    position: absolute;
-    z-index: 10; }
   .slider__elSlide img {
     width: 100%;
     height: auto; }
@@ -545,20 +560,29 @@ header {
 
 .menu-wrapper {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 30px;
+  right: 10px;
+  bottom: 30px;
   width: 40%;
   height: 100vh;
   background: #fefefe;
-  z-index: 0;
+  z-index: 50;
   color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.menu-wrapper div {
+.menu-wrapper .menu-wrapper__list {
   marin: auto; }
+
+.menu-wrapper__cross {
+  height: 50px;
+  width: 50px;
+  background: #000;
+  position: absolute;
+  right: 70px;
+  top: 50px; }
 
 .menu-hidden {
   display: none; }
