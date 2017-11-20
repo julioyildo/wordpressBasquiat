@@ -4,7 +4,11 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
     <!-- Appel du fichier style.css de notre thème -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+    <script async src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script async src="assets/build/js/main.min.js"></script>
 
 
     <!--
@@ -15,8 +19,8 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> >
-<div class="container">
-    <header id="header" class="">
+<div class="container-fluid">
+    <header id="header" class="row">
         <div class="logo">
             <img src="<?= IMAGES_URL;?>/logo.png" alt="">
         </div>

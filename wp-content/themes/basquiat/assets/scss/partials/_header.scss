@@ -2,20 +2,23 @@ body {
   background: #212121;
   color: #fefefe;
   width: 100%;
+  overflow-x:hidden ;
 }
+
 .container {
   position: relative;
   width: 80vw;
-  margin: 0 auto;
-}
+  }
+
   header {
+    position: absolute;
     top: 55px;
     width: 100%;
-    z-index: 10;
+    padding: 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    z-index: 10;
   }
 
   #content {
