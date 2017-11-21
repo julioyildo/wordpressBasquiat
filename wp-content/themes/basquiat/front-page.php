@@ -23,11 +23,16 @@ get_header() ?>
                 </div>
         </section>
         <section class="citation" style="color:white;">
+
             <p class="citation__decoration">[...]</p>
             <?php if( get_field('introduction') ): ?>
-
                 <p class="citation__content"><?php the_field('introduction'); ?></p>
             <?php endif; ?>
+                <div class="citation__titleBkg">
+                    intro
+                </div>
+
+
         </section>
 
         <section class="home-profile">
@@ -112,7 +117,7 @@ get_header() ?>
                         </div>
                     </div>
 
-                    <div class="thumbnail">
+                    <div class="thumbnail revolution-content-img">
                         <?php
 
                         $image = get_field('revolutionnaire_image');
@@ -164,17 +169,17 @@ get_header() ?>
                         <div class="slider__elementsBkgImage">
                             <img src="<?php echo IMAGES_URL?>/paint1.png" alt="paint decoration">
                         </div>
-                        <div class="slider__elSlide">
+                        <div class="slider__elSlide elSlide1">
                             <div class="slide__filter"></div>
                             <img src="<?php echo IMAGES_URL?>/galerie1.png" alt="artwork">
                         </div>
 
-                        <div class="slider__elSlide">
+                        <div class="slider__elSlide elSlide2">
                             <div class="slide__filter"></div>
                             <img src="<?php echo IMAGES_URL?>/galerie2.png" alt="artwork">
                         </div>
 
-                        <div class="slider__elSlide">
+                        <div class="slider__elSlide elSlide3">
                             <div class="slide__filter"></div>
                             <img src="<?php echo IMAGES_URL?>/galerie3.png" alt="artwork">
                         </div>
@@ -207,43 +212,90 @@ get_header() ?>
                 <?php if( get_field('title_actuality') ): ?>
                     <h3 class="actuality__title slider__title"><?php the_field('title_actuality'); ?></h3>
                 <?php endif; ?>
-                <div class="actulity__articlesWrapper row">
+
+
+
+
+
+
+              <!--  <div class="actuality__articlesWrapper row">
 
                     <div class="actuality__articles card col-4 " style="width: 20rem;">
-                        <img class="card-img-top" src="<?php echo IMAGES_URL?>/blog1.png" alt="Card image cap">
+                        <img class="card-img-top" src="<?php /*echo IMAGES_URL*/?>/blog1.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-date">10 JUIN 2017</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                             <a href="#" class="card-btn btn ">
                                 <p>Lire l'article</p>
-                                <img src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                                <img src="<?php /*echo IMAGES_URL*/?>/arrow-right.svg" >
                             </a>
                         </div>
                     </div> <div class="actuality__articles card col-4 " style="width: 20rem;">
-                        <img class="card-img-top" src="<?php echo IMAGES_URL?>/blog1.png" alt="Card image cap">
+                        <img class="card-img-top" src="<?php /*echo IMAGES_URL*/?>/blog1.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-date">10 JUIN 2017</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                             <a href="#" class="card-btn btn ">
                                 <p>Lire l'article</p>
-                                <img src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                                <img src="<?php /*echo IMAGES_URL*/?>/arrow-right.svg" >
                             </a>
                         </div>
                     </div> <div class="actuality__articles card col-4 " style="width: 20rem;">
-                        <img class="card-img-top" src="<?php echo IMAGES_URL?>/blog1.png" alt="Card image cap">
+                        <img class="card-img-top" src="<?php /*echo IMAGES_URL*/?>/blog1.png" alt="Card image cap">
                         <div class="card-block">
                             <h4 class="card-date">10 JUIN 2017</h4>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
                             <a href="#" class="card-btn btn ">
                                 <p>Lire l'article</p>
-                                <img src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                                <img src="<?php /*echo IMAGES_URL*/?>/arrow-right.svg" >
                             </a>
                         </div>
                     </div>
+                </div>-->
+
+
+                <div class="actulity__articlesWrapper row">
+                    <?php
+                    $args= array(
+                        'posts_per_page' => 3
+                    );
+                    $the_query = new WP_Query( $args );
+                    // The Loop
+                    if ( $the_query->have_posts() ) {
+                        while ( $the_query->have_posts() ) {
+                            $the_query->the_post();
+                            ?>
+                            <div class="actuality__articles card col-4 ">
+                                <div class="actuality-thumbnail">
+                                    <?php
+                                    if(has_post_thumbnail())
+                                    {
+                                        the_post_thumbnail("hub_article_thumbnail");
+                                    }
+                                    ?>
+                                </div>
+
+                                <div class="card-block">
+                                    <h1 class="card-title"><?php the_title() ?></h1>
+                                    <h4 class="card-date"><?php the_time('F jS, Y') ?></h4>
+                                    <p class="card-text"><?php the_excerpt(); ?></p>
+                                    <a href="<?php the_permalink() ?>" class="card-btn btn ">
+                                        <p>Lire l'article</p> <img src="<?php echo IMAGES_URL?>/arrow-right.svg"> </a>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                        /* Restore original Post Data */
+                        wp_reset_postdata();
+                    }
+                    ?>
                 </div>
+
+
+
             </div>
         </section >
     </div>
