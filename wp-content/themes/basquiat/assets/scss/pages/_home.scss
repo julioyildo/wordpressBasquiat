@@ -443,14 +443,12 @@
 
 .slider__elementsBkgImage {
   position: absolute;
-
   z-index: -1;
   left: 0;
   transform-origin: center;
-  transform: translateX(-50%) rotate(-78deg) ;
+  transform: translateX(-50%) rotate(-78deg);
   img {
     height:100%;
-    widows:100%;
   }
 
 }
