@@ -196,10 +196,17 @@ a {
   height: auto;
   position: relative;
   padding: 200px 0;
+  font-family: 'Abril Fatface', cursive; }
+
+.citation__titleBkg {
+  position: absolute;
+  top: -300px;
+  z-index: -11;
+  font-size: 10rem;
+  color: #fff;
+  opacity: .1;
   font-family: 'Abril Fatface', cursive;
-  background-image: url("../../images/intro.svg");
-  background-repeat: no-repeat;
-  background-position: center; }
+  text-transform: uppercase; }
 
 .citation__decoration {
   text-align: center;
@@ -292,7 +299,8 @@ a {
 .home-perceverant .perceverant-content-wrapper
 .home-perceverant-text-wrapper div p {
   font-size: 18px;
-  line-height: 35px; }
+  line-height: 35px;
+  font-family: 'Poppins', sans-serif; }
 
 .home__decorationPaint {
   width: 1000px;
@@ -374,6 +382,7 @@ a {
 
 .history__titleBkg {
   position: absolute;
+  left: -1190px;
   z-index: -1;
   font-size: 9rem;
   color: #fff;
@@ -487,6 +496,7 @@ a {
 
 .actuality__titleBkg {
   position: absolute;
+  right: -10  00px;
   z-index: -1;
   font-size: 9rem;
   color: #fff;
@@ -494,18 +504,65 @@ a {
   font-family: 'Abril Fatface', cursive;
   text-transform: uppercase; }
 
-.actulity__articlesWrapper {
+.actuality__articlesWrapper {
   width: 100%; }
 
+/*
+
+.actuality__articles {
+  border-radius: 0 ;
+  background: none;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.actuality__articles .card-block .card-date {
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: #E3B721;
+}
+
+.card-text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card-btn {
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 700;
+
+}
+
+
+.card-btn p {
+  margin-bottom: 10px;
+}
+*/
 .actuality__articles {
   border-radius: 0;
   background: none;
   border: none;
   font-family: 'Poppins', sans-serif; }
 
+.actuality-thumbnail img {
+  max-width: 100%;
+  height: auto; }
+
 .actuality__articles .card-block .card-date {
   margin: 15px 0;
   text-transform: uppercase;
+  color: #E3B721; }
+
+.card-date {
+  font-style: italic; }
+
+.card-title {
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
   color: #E3B721; }
 
 .card-text {
@@ -517,6 +574,9 @@ a {
   margin-top: 10px;
   width: 100%;
   font-weight: 700; }
+
+.card-btn:hover {
+  color: #E3B721; }
 
 .card-btn p {
   margin-bottom: 10px; }
@@ -541,7 +601,7 @@ body {
 
 header {
   position: absolute;
-  top: 55px;
+  top: 85px;
   width: 100%;
   padding: 0 100px;
   display: flex;
