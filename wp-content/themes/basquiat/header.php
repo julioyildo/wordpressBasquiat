@@ -25,7 +25,10 @@
             <img src="<?= IMAGES_URL;?>/logo.png" alt="">
         </div>
         <div class="menu-icon">
-            <img src="<?= IMAGES_URL;?>/menu-icon.png" alt="">
+            <div class="line line-outer"></div>
+            <div class="line line-center"></div>
+            <div class="line line-outer"></div>
+            <p class="menu-name">MENU</p>
         </div>
         <div class="menu-wrapper menu-hidden">
             <div class="menu-wrapper__cross">
