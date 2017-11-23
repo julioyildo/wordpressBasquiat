@@ -1,6 +1,6 @@
 <?php get_header(); //appel du template header.php  ?>
 
-<div id="content">
+<div id="content" class="single-content-wrapper">
 
     <?php
     // boucle WordPress

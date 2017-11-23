@@ -1044,16 +1044,16 @@ a {
   .biography__year1988 {
     left: -10px !important; } }
 
-#content {
+.single-content-wrapper {
   margin: 20px; }
 
-#content .thumbnail {
+.single-content-wrapper .thumbnail {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
 
-#content .thumbnail img {
+.single-content-wrapper .thumbnail img {
   width: 100%;
   height: 100%; }
 
