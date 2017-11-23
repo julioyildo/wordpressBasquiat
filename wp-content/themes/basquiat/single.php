@@ -9,8 +9,7 @@
         the_post();
         ?>
         <!--IMAGE INTRO-->
-        <div class="container">
-             <div class="img-responsive thumbnail">
+        <div class="img-responsive thumbnail">
                 <?php
                 if(has_post_thumbnail())
                 {
@@ -18,7 +17,8 @@
                     
                 }
                 ?>
-            </div>
+        </div>
+        <div class="container">
     
         <!--ARTICLE-->
             <div class="article-content row">
@@ -31,7 +31,7 @@
             
             <div class="row article-end">
                 <div class="center-block text-center">
-                    <a href=" http://localhost:8888/wordpressBasquiat/2017/11/16/"><p class="home-return">Retour à l'accueil</p>
+                    <a href=" <?php echo get_option('home'); ?>/"><p class="home-return">Retour à l'accueil</p>
                     <img src="<?php echo IMAGES_URL?>/arrow-right.svg" alt="Accueil"></a>
                 </div>
             </div>
@@ -49,7 +49,6 @@
     ?>
 
 
-    </div> <!-- /container -->
 </div><!-- /content -->
 
 <?php get_footer(); //appel du template footer.php ?>
