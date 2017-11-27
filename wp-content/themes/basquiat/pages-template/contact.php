@@ -4,29 +4,19 @@ Template Name:  contact
 */
 ?>
 <?php get_header(); ?>
-    <h3>je suis la page contact</h3>
-
-
-    <div id="content">
-        <h1>Contenu Principal</h1>
-        <?php
-        // boucle WordPress
-        if (have_posts()){
-            while (have_posts()){
-                the_post();
-                ?>
-                <h1><?php the_title(); ?></h1>
-                <h2>Posté le <?php the_time('F jS, Y') ?></h2>
-                <p><?php the_content(); ?></p>
-                <?php
-            }
-        }
-        else {
-            ?>
-            Nous n'avons pas trouvé d'article répondant à votre recherche
-            <?php
-        }
-        ?>
+    <div class="container-fluid contact__intro">
+        <div class="contact__imageWrapper" style="background-image: url(<?php the_field('contact_image'); ?>);"></div>
+        <div class="col contact__text">
+            <?php if( get_field('contact_intro') ): ?>
+                <h1><?php the_field('contact_intro'); ?></h1>
+            <?php endif; ?>
+        </div>
+    </div>
+    <div class="container contact__items">
+        <div class="col">
+            <?php echo do_shortcode('[wpforms id="160" title="false" description="false"]'); ?>
+        </div>
+    </div>
     </div> <!-- /content -->
 
 <?php get_footer(); ?>
