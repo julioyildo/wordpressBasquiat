@@ -25,7 +25,7 @@ get_header()
 
                     <?php the_post_thumbnail(); ?>
                 </div>
-
+            </div>
         </section>
         <section class="citation" style="color:white;">
             <?php if( get_field('introduction') ): ?>

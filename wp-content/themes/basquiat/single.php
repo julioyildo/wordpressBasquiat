@@ -30,9 +30,8 @@
             </div>
             
             <div class="row article-end">
-                <div class="center-block text-center">
-                    <a href=" <?php echo get_option('home'); ?>/"><p class="home-return">Retour à l'accueil</p>
-                    <img src="<?php echo IMAGES_URL?>/arrow-right.svg" alt="Accueil"></a>
+                <div class="all-articles"><a href="<?php echo get_option('home'); ?>" class="card-btn btn ">
+                    <p class="home-return">Retour à l'accueil</p><img src="<?php echo IMAGES_URL?>/arrow-right.svg" alt="Accueil"> </a>
                 </div>
             </div>
             

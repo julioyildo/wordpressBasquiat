@@ -72,8 +72,20 @@
     color: #FFFFFF;
 }
 
-.article-end .home-return{
+.article-end{
+    width: 100%;
+    margin: auto;
+}
+
+.article-end .all-articles{
+    width: 100%;
+    margin: auto;
+    text-align: center;
     margin-top:50px;
+    margin-bottom: 50px;
+}
+
+.all-articles .home-return{
     margin-bottom: 20px;
     font-family: Poppins;
     font-style: normal;
@@ -83,6 +95,6 @@
     color: #FFFFFF;
 }
 
-article-end .home-return:hover{
+.home-return:hover{
     color: #E3B721;
 }

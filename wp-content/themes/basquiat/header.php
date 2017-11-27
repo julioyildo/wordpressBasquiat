@@ -22,7 +22,7 @@
 <div class="container-fluid">
     <header id="header" class="row">
         <div class="logo">
-            <img src="<?= IMAGES_URL;?>/logo.png" alt="">
+            <a href=" <?php echo get_option('home'); ?>/"><img src="<?= IMAGES_URL;?>/logo.png" alt=""></a>
         </div>
         <div class="menu-icon">
             <div class="line line-outer"></div>
@@ -31,9 +31,7 @@
             <p class="menu-name">MENU</p>
         </div>
         <div class="menu-wrapper menu-hidden">
-            <div class="menu-wrapper__cross">
-                <div></div>
-            </div>
+
             <div class="menu-wrapper__list">
             <?php
             $args=array(

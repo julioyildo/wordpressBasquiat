@@ -21,6 +21,7 @@ get_header() ?>
                 <div class="thumbnail home-intro__bkg">
                     <?php the_post_thumbnail(); ?>
                 </div>
+            </div>
         </section>
         <section class="citation" style="color:white;">
 
@@ -214,50 +215,7 @@ get_header() ?>
                 <?php endif; ?>
 
 
-
-
-
-
-              <!--  <div class="actuality__articlesWrapper row">
-
-                    <div class="actuality__articles card col-4 " style="width: 20rem;">
-                        <img class="card-img-top" src="<?php /*echo IMAGES_URL*/?>/blog1.png" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-date">10 JUIN 2017</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                            <a href="#" class="card-btn btn ">
-                                <p>Lire l'article</p>
-                                <img src="<?php /*echo IMAGES_URL*/?>/arrow-right.svg" >
-                            </a>
-                        </div>
-                    </div> <div class="actuality__articles card col-4 " style="width: 20rem;">
-                        <img class="card-img-top" src="<?php /*echo IMAGES_URL*/?>/blog1.png" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-date">10 JUIN 2017</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                            <a href="#" class="card-btn btn ">
-                                <p>Lire l'article</p>
-                                <img src="<?php /*echo IMAGES_URL*/?>/arrow-right.svg" >
-                            </a>
-                        </div>
-                    </div> <div class="actuality__articles card col-4 " style="width: 20rem;">
-                        <img class="card-img-top" src="<?php /*echo IMAGES_URL*/?>/blog1.png" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-date">10 JUIN 2017</h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-                            <a href="#" class="card-btn btn ">
-                                <p>Lire l'article</p>
-                                <img src="<?php /*echo IMAGES_URL*/?>/arrow-right.svg" >
-                            </a>
-                        </div>
-                    </div>
-                </div>-->
-
-
-                <div class="actulity__articlesWrapper row">
+                <div class="actuality__articlesWrapper row">
                     <?php
                     $args= array(
                         'posts_per_page' => 3
@@ -283,7 +241,7 @@ get_header() ?>
                                     <h4 class="card-date"><?php the_time('F jS, Y') ?></h4>
                                     <p class="card-text"><?php the_excerpt(); ?></p>
                                     <a href="<?php the_permalink() ?>" class="card-btn btn ">
-                                        <p>Lire l'article</p> <img src="<?php echo IMAGES_URL?>/arrow-right.svg"> </a>
+                                        <p>Lire l'article</p><img src="<?php echo IMAGES_URL?>/arrow-right.svg"></a>
                                 </div>
                             </div>
                             <?php
