@@ -1,8 +1,14 @@
+#content{
+  overflow: hidden;
+}
 .home-intro {
       width: 100%;
       height: 100vh;
       padding: 20px 20px;
       overflow: hidden;
+      @media screen and (min-width: 640px){
+        height: 50vh !important;
+      }
     }
     .home-intro .thumbnail {
       position: absolute;
@@ -160,6 +166,9 @@
   line-height: 35px;
   max-width: 700px;
   margin-bottom: 120px;
+  @media screen and (min-width: 640px){
+    width: 50% !important;
+  }
 }
 
 .home-profile .profil-content-wrapper
@@ -169,6 +178,11 @@
   bottom:  0;
   height: 900px;
   z-index: 1;
+  @media screen and (min-width: 640px){
+    width: 50% !important;
+    right: 0;
+    height: auto !important;
+  }
    img {
      height:100%;
      width: auto;
@@ -241,7 +255,10 @@
 .home-perceverant-text-wrapper div p {
     font-size: 18px;
     line-height: 35px;
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    @media screen and (min-width: 640px){
+      line-height: 28px !important;
+    }
 }
 
 
@@ -305,6 +322,9 @@
 .home-revolution .home-revolution-text-wrapper p {
     font-size: 18px;
     line-height: 35px;
+    @media screen and (min-width: 640px){
+      line-height: 28px !important;
+    }
 }
 
 .home-revolution .revolution-content-wrapper .thumbnail {
@@ -313,6 +333,9 @@
   z-index: 9;
   top: -30px;
   right: 0;
+  @media screen and (min-width: 640px){
+    top: -130px;
+  }
 
   img{
     width: 100%;
@@ -581,7 +604,9 @@
 
 
 // HOME FOOTER IMG
-
+.home__footer{
+  overflow: hidden;
+}
 .home__footerImg{
   width: 100%;
   transform-origin: center;

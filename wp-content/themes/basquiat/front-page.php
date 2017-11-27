@@ -19,7 +19,7 @@ get_header() ?>
                     <p>SCROLLER VERS LE BAS</p>
                 </div>
                 <div class="thumbnail home-intro__bkg">
-                    <?php the_post_thumbnail(); ?>
+                    <img class="img-fluid" src="<?php the_post_thumbnail(); ?>" alt="home-intro-image">
                 </div>
             </div>
         </section>
@@ -58,7 +58,7 @@ get_header() ?>
 
                         if( !empty($image) ): ?>
 
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endif; ?>
                     </div>
 
@@ -81,7 +81,7 @@ get_header() ?>
 
                         if( !empty($image) ): ?>
 
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
                         <?php endif; ?>
                     </div>
                     <div class="home-perceverant-text-wrapper">
@@ -125,7 +125,7 @@ get_header() ?>
 
                         if( !empty($image) ): ?>
 
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
                         <?php endif; ?>
 
@@ -139,12 +139,12 @@ get_header() ?>
             <div class="history__direction container">
                 <div class="history__directionText"> Lire l’histoire de Basquiat</div>
                 <div class="history__directionArrow">
-                    <img src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                    <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
                 </div>
                 <hr class="history__directionSeparator">
             </div>
             <div class="history__bkgImage">
-                <img src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
+                <img class="img-fluid" src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
             </div>
 
 
@@ -168,21 +168,21 @@ get_header() ?>
 
                 <div class="slider__elements">
                         <div class="slider__elementsBkgImage">
-                            <img src="<?php echo IMAGES_URL?>/paint1.png" alt="paint decoration">
+                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/paint1.png" alt="paint decoration">
                         </div>
                         <div class="slider__elSlide elSlide1">
                             <div class="slide__filter"></div>
-                            <img src="<?php echo IMAGES_URL?>/galerie1.png" alt="artwork">
+                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie1.png" alt="artwork">
                         </div>
 
                         <div class="slider__elSlide elSlide2">
                             <div class="slide__filter"></div>
-                            <img src="<?php echo IMAGES_URL?>/galerie2.png" alt="artwork">
+                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie2.png" alt="artwork">
                         </div>
 
                         <div class="slider__elSlide elSlide3">
                             <div class="slide__filter"></div>
-                            <img src="<?php echo IMAGES_URL?>/galerie3.png" alt="artwork">
+                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie3.png" alt="artwork">
                         </div>
                 </div>
 
@@ -197,12 +197,12 @@ get_header() ?>
 
                 <div class="actuality__directionText"> Voir la galerie</div>
                 <div class="actuality__directionArrow">
-                    <img src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                    <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
                 </div>
                 <hr class="actuality__directionSeparator">
             </div>
             <div class="actuality__bkgImage">
-                <img src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
+                <img class="img-fluid" src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
             </div>
             <?php if( get_field('title_actuality') ): ?>
             <div class="actuality__titleBkg">
@@ -258,9 +258,9 @@ get_header() ?>
         </section >
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid home__footer">
         <section class="home__footerImg" >
-            <img src="<?php echo IMAGES_URL?>/home__footerImg.png" alt="">
+            <img class="img-fluid" src="<?php echo IMAGES_URL?>/home__footerImg.png" alt="">
 
         </section>
     </div>
