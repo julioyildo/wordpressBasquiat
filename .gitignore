@@ -15,3 +15,10 @@ style.min.css
 !wp-content/themes/**
 !wp-content/mu-plugins
 !wp-content/mu-plugins/**
+
+
+# Ignore le fichier DS_Store
+!wp-content/.DS_Store
+!wp-content/themes/.DS_Store
+!wp-content/themes/basquiat/.DS_Store
+!wp-content/themes/basquiat/assets/.DS_Store
