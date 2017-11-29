@@ -136,12 +136,12 @@ get_header() ?>
 
         <!-- HISTORY-->
         <section class="history">
-            <div class="history__direction container">
+            <div class="history__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'biographie' ) ); ?>">
                 <div class="history__directionText"> Lire l’histoire de Basquiat</div>
                 <div class="history__directionArrow">
                     <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
                 </div>
-                <hr class="history__directionSeparator">
+                <hr class="history__directionSeparator"></a>
             </div>
             <div class="history__bkgImage">
                 <img class="img-fluid" src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
@@ -193,13 +193,13 @@ get_header() ?>
 
         <!-- ACTUALITY-->
         <section class="actuality">
-            <div class="actuality__direction container">
+            <div class="actuality__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'gallery' ) ); ?>">
 
                 <div class="actuality__directionText"> Voir la galerie</div>
                 <div class="actuality__directionArrow">
                     <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
                 </div>
-                <hr class="actuality__directionSeparator">
+                <hr class="actuality__directionSeparator"></a>
             </div>
             <div class="actuality__bkgImage">
                 <img class="img-fluid" src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
