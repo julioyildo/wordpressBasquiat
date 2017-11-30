@@ -136,7 +136,7 @@ get_header() ?>
 
         <!-- HISTORY-->
         <section class="history">
-            <div class="history__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'biographie' ) ); ?>">
+            <div class="history__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'biographie' ) ); ?>" class="history__direction__link">
                 <div class="history__directionText"> Lire l’histoire de Basquiat</div>
                 <div class="history__directionArrow">
                     <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
@@ -193,7 +193,7 @@ get_header() ?>
 
         <!-- ACTUALITY-->
         <section class="actuality">
-            <div class="actuality__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'gallery' ) ); ?>">
+            <div class="actuality__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'gallery' ) ); ?>" class="actuality__direction__link">
 
                 <div class="actuality__directionText"> Voir la galerie</div>
                 <div class="actuality__directionArrow">

@@ -383,6 +383,10 @@ a {
   text-align: center;
   margin-bottom: 220px; }
 
+.history__direction__link:hover {
+  color: #E3B721;
+  text-decoration: none; }
+
 .history__directionText {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
@@ -486,6 +490,10 @@ a {
 .actuality__direction {
   text-align: center;
   margin-bottom: 220px; }
+
+.actuality__direction__link:hover {
+  color: #E3B721;
+  text-decoration: none; }
 
 .actuality__directionText {
   font-family: 'Poppins', sans-serif;
@@ -1117,7 +1125,6 @@ a {
 .home-return:hover {
   color: #E3B721; }
 
-<<<<<<< Updated upstream
 .contact__items {
   font-size: 1rem;
   font-family: 'Poppins', sans-serif;
@@ -1155,7 +1162,6 @@ a {
   font-family: 'Poppins', sans-serif;
   text-align: center; }
 
-=======
 .galleries {
   padding: 0 100px; }
 
@@ -1262,7 +1268,6 @@ a {
 .galleries__menu .current-menu-item a {
   color: #EEC901; }
 
->>>>>>> Stashed changes
 body {
   background: #212121;
   color: #fefefe;

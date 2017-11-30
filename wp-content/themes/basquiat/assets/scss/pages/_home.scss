@@ -360,6 +360,11 @@
   margin-bottom: 220px;
 }
 
+.history__direction__link:hover {
+  color: #E3B721;
+  text-decoration: none;
+}
+
 .history__directionText {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 50px;
@@ -504,6 +509,11 @@
 .actuality__direction {
   text-align: center;
   margin-bottom: 220px;
+}
+
+.actuality__direction__link:hover {
+  color: #E3B721;
+  text-decoration: none;
 }
 
 .actuality__directionText {
