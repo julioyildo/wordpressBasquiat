@@ -1357,6 +1357,10 @@ a {
 .galleries__menu .current-menu-item a {
   color: #EEC901; }
 
+.gallery__content {
+  padding: 0 100px;
+  margin-bottom: 48px; }
+
 body {
   background: #212121;
   color: #fefefe;
@@ -1470,6 +1474,7 @@ header {
         position: relative;
         z-index: 2; }
       .menu-wrapper .menu-wrapper__list .menu-menu-entete-container .menu_header li a {
+        position: relative;
         text-decoration: none; }
         .menu-wrapper .menu-wrapper__list .menu-menu-entete-container .menu_header li a:hover {
           color: black; }
@@ -1478,7 +1483,7 @@ header {
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 50%;
+        width: 100%;
         height: 70%;
         background: #E9C22A;
         z-index: -1;
