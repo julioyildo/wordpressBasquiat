@@ -1122,6 +1122,9 @@ a {
   font-size: 16px;
   color: #FFFFFF; }
 
+.all-articles img {
+  transform: rotate(180deg); }
+
 .home-return:hover {
   color: #E3B721; }
 
