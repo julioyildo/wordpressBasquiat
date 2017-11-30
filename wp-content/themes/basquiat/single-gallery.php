@@ -2,7 +2,7 @@
   <section class="container-fluid gallery">
     <div class="row">
       <div class="gallery__cover">
-        <?php the_post_thumbnail( 'thumbnail' ); ?>
+        <?php the_post_thumbnail( 'gallery_header_thumbnail' ); ?>
         <div class="gallery__coverFilter">
         </div>
         <h1 class="gallery__coverTitle">Galerie <br> <?php the_title(); ?></h1>
