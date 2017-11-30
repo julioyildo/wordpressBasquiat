@@ -9,7 +9,7 @@
           <div class="col-lg-4">
             <article class="galleries__listItem">
               <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail( 'thumbnail' ); ?>
+                <?php the_post_thumbnail( 'gallery_list_thumbnail' ); ?>
               </a>
               <h2 class="galleries__listItem__title">
                 <a href="<?php the_permalink(); ?>">
