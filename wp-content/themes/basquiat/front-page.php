@@ -6,7 +6,6 @@ Template Name:  home
 get_header() ?>
     <div id="content" >
         <section class="home-intro">
-
             <div class="intro-background-wrapper">
                 <div class="intro__content container">
                     <?php if( get_field('title_page') ): ?>
@@ -24,16 +23,13 @@ get_header() ?>
             </div>
         </section>
         <section class="citation" style="color:white;">
-
             <p class="citation__decoration">[...]</p>
             <?php if( get_field('introduction') ): ?>
                 <p class="citation__content"><?php the_field('introduction'); ?></p>
             <?php endif; ?>
-                <div class="citation__titleBkg">
-                    intro
-                </div>
-
-
+            <div class="citation__titleBkg">
+                intro
+            </div>
         </section>
 
         <section class="home-profile">
@@ -69,7 +65,7 @@ get_header() ?>
         <div class="container">
 
 
-        <!-- PERCEVERANT SECTION-->
+            <!-- PERCEVERANT SECTION-->
             <section class="home-perceverant">
 
                 <div class="perceverant-content-wrapper">
@@ -136,12 +132,14 @@ get_header() ?>
 
         <!-- HISTORY-->
         <section class="history">
-            <div class="history__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'biographie' ) ); ?>" class="history__direction__link">
-                <div class="history__directionText"> Lire l’histoire de Basquiat</div>
-                <div class="history__directionArrow">
-                    <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
-                </div>
-                <hr class="history__directionSeparator"></a>
+            <div class="history__direction container">
+                <a href="<?php echo get_permalink( get_page_by_title( 'biographie' ) ); ?>">
+                    <div class="history__directionText"> Lire l’histoire de Basquiat</div>
+                    <div class="history__directionArrow">
+                        <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                    </div>
+                    <hr class="history__directionSeparator">
+                </a>
             </div>
             <div class="history__bkgImage">
                 <img class="img-fluid" src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
@@ -156,7 +154,7 @@ get_header() ?>
 
 
             <div class="history__slider">
-                <div class="slider__description container">
+                <div class="slider__description container mt-5">
                     <?php if( get_field('title_galerie') ): ?>
                         <h3 class="slider__title"><?php the_field('title_galerie'); ?></h3>
                     <?php endif; ?>
@@ -166,56 +164,57 @@ get_header() ?>
                     <?php endif; ?>
                 </div>
 
-                <div class="slider__elements">
-                        <div class="slider__elementsBkgImage">
-                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/paint1.png" alt="paint decoration">
-                        </div>
-                        <div class="slider__elSlide elSlide1">
-                            <div class="slide__filter"></div>
-                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie1.png" alt="artwork">
-                        </div>
+                <div class="slider__elements container">
+                    <div class="slider__elementsBkgImage">
+                        <img class="img-fluid" src="<?php echo IMAGES_URL?>/paint1.png" alt="paint decoration">
+                    </div>
+                    <div class="slider__elSlide elSlide1">
+                        <div class="slide__filter"></div>
+                        <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie1.png" alt="artwork">
+                    </div>
 
-                        <div class="slider__elSlide elSlide2">
-                            <div class="slide__filter"></div>
-                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie2.png" alt="artwork">
-                        </div>
+                    <div class="slider__elSlide elSlide2 pl-3">
+                        <div class="slide__filter"></div>
+                        <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie2.png" alt="artwork">
+                    </div>
 
-                        <div class="slider__elSlide elSlide3">
-                            <div class="slide__filter"></div>
-                            <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie3.png" alt="artwork">
-                        </div>
+                    <div class="slider__elSlide elSlide3 pl-3">
+                        <div class="slide__filter"></div>
+                        <img class="img-fluid" src="<?php echo IMAGES_URL?>/galerie3.png" alt="artwork">
+                    </div>
                 </div>
 
             </div>
 
-            </section>
+        </section>
 
 
         <!-- ACTUALITY-->
         <section class="actuality">
-            <div class="actuality__direction container"><a href="<?php echo get_permalink( get_page_by_title( 'gallery' ) ); ?>" class="actuality__direction__link">
-
-                <div class="actuality__directionText"> Voir la galerie</div>
-                <div class="actuality__directionArrow">
-                    <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
-                </div>
-                <hr class="actuality__directionSeparator"></a>
+            <div class="actuality__direction container">
+                <a href="<?php echo get_permalink( get_page_by_title( 'gallery' ) ); ?>">
+                    <div class="actuality__directionText"> Voir la galerie</div>
+                    <div class="actuality__directionArrow">
+                        <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                    </div>
+                    <hr class="actuality__directionSeparator">
+                </a>
             </div>
             <div class="actuality__bkgImage">
                 <img class="img-fluid" src="<?php echo IMAGES_URL?>/brush2.png" alt="brush decoration">
             </div>
             <?php if( get_field('title_actuality') ): ?>
-            <div class="actuality__titleBkg">
-                <?php the_field('title_actuality'); ?>
-            </div>
+                <div class="actuality__titleBkg">
+                    <?php the_field('title_actuality'); ?>
+                </div>
             <?php endif; ?>
             <div class="container">
                 <?php if( get_field('title_actuality') ): ?>
-                    <h3 class="actuality__title slider__title"><?php the_field('title_actuality'); ?></h3>
+                    <h3 class="actuality__title slider__title mt-5"><?php the_field('title_actuality'); ?></h3>
                 <?php endif; ?>
 
 
-                <div class="actuality__articlesWrapper row">
+                <div class="actuality__articlesWrapper row ml-0 mt-5">
                     <?php
                     $args= array(
                         'posts_per_page' => 3
@@ -226,7 +225,7 @@ get_header() ?>
                         while ( $the_query->have_posts() ) {
                             $the_query->the_post();
                             ?>
-                            <div class="actuality__articles card col-4 ">
+                            <div class="actuality__articles card col-md-4 col-sm-12">
                                 <div class="actuality-thumbnail">
                                     <?php
                                     if(has_post_thumbnail())
@@ -251,11 +250,15 @@ get_header() ?>
                     }
                     ?>
                 </div>
-
-
-
             </div>
-        </section >
+            <a href="<?php echo get_permalink( get_page_by_title( 'blog' ) ); ?>">
+                <div class="blog__directionText mt-5"> Voir le blog</div>
+                <div class="blog__directionArrow">
+                    <img class="img-fluid" src="<?php echo IMAGES_URL?>/arrow-right.svg" >
+                </div>
+                <hr class="actuality__directionSeparator">
+            </a>
+        </section>
     </div>
 
     <div class="container-fluid home__footer">
@@ -264,8 +267,6 @@ get_header() ?>
 
         </section>
     </div>
-        <!-- /container-->
+    <!-- /container-->
     </div> <!-- /content -->
 <?php get_footer(); ?>
-
-

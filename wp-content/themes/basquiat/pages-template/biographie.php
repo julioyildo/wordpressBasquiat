@@ -4,66 +4,66 @@ Template Name: biographie
 */
 ?>
 <?php get_header(); ?>
-<div class="container-fluid biography__intro" style="background-image: url(<?php the_field('biography_intro_image'); ?>);">
-    <div class="biography__introContent">
-        <?php if( get_field('title_page') ): ?>
-            <h1><?php the_field('title_page'); ?></h1>
-        <?php endif; ?>
-        <?php if( get_field('sub_title') ): ?>
-            <p><?php the_field('sub_title'); ?></p>
-        <?php endif; ?>
-    </div>
-</div>
-<div class="container biography__1960">
-    <div class="row h-50 align-items-center">
-        <div class="biography__year1960"></div>
-        <div class="col-md-6 biography__1960image">
-            <?php
-
-            $image = get_field('1960_image');
-
-            if( !empty($image) ): ?>
-
-                <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
+    <div class="container-fluid biography__intro" style="background-image: url(<?php the_field('biography_intro_image'); ?>);">
+        <div class="biography__introContent">
+            <?php if( get_field('title_page') ): ?>
+                <h1><?php the_field('title_page'); ?></h1>
             <?php endif; ?>
-        </div>
-        <div class="col-md-6 biography__1960text">
-            <?php if( get_field('title_1960') ): ?>
-                <h2><?php the_field('title_1960'); ?></h2>
-            <?php endif; ?>
-            <?php if( get_field('text_1960') ): ?>
-                <p><?php the_field('text_1960'); ?></p>
-            <?php endif; ?>        </div>
-    </div>
-</div>
-<div class="container biography__1968">
-    <div class="row h-50 align-items-center">
-        <div class="biography__year1968"></div>
-        <div class="col-md-6 biography__1960text">
-            <?php if( get_field('title_1968') ): ?>
-                <h2><?php the_field('title_1968'); ?></h2>
-            <?php endif; ?>
-            <?php if( get_field('text_1968') ): ?>
-                <p><?php the_field('text_1968'); ?></p>
-            <?php endif; ?>
-        </div>
-        <div class="col-md-6 biography__1968image">
-            <?php
-
-            $image = get_field('1968_image');
-
-            if( !empty($image) ): ?>
-
-                <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-
+            <?php if( get_field('sub_title') ): ?>
+                <p><?php the_field('sub_title'); ?></p>
             <?php endif; ?>
         </div>
     </div>
-</div>
-<div class="container biography__filligrane">
-    <h2>Carrière artistique</h2>
-</div>
+    <div class="container biography__1960">
+        <div class="row h-50 align-items-center">
+            <div class="biography__year1960"></div>
+            <div class="col-md-6 biography__1960image">
+                <?php
+
+                $image = get_field('1960_image');
+
+                if( !empty($image) ): ?>
+
+                    <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                <?php endif; ?>
+            </div>
+            <div class="col-md-6 biography__1960text">
+                <?php if( get_field('title_1960') ): ?>
+                    <h2><?php the_field('title_1960'); ?></h2>
+                <?php endif; ?>
+                <?php if( get_field('text_1960') ): ?>
+                    <p><?php the_field('text_1960'); ?></p>
+                <?php endif; ?>        </div>
+        </div>
+    </div>
+    <div class="container biography__1968">
+        <div class="row h-50 align-items-center">
+            <div class="biography__year1968"></div>
+            <div class="col-md-6 biography__1960text">
+                <?php if( get_field('title_1968') ): ?>
+                    <h2><?php the_field('title_1968'); ?></h2>
+                <?php endif; ?>
+                <?php if( get_field('text_1968') ): ?>
+                    <p><?php the_field('text_1968'); ?></p>
+                <?php endif; ?>
+            </div>
+            <div class="col-md-6 biography__1968image">
+                <?php
+
+                $image = get_field('1968_image');
+
+                if( !empty($image) ): ?>
+
+                    <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+    <div class="container biography__filligrane">
+        <h2>Carrière artistique</h2>
+    </div>
     <div class="container biography__1976">
         <div class="row h-50 align-items-center">
             <div class="biography__year1976"></div>
@@ -251,6 +251,6 @@ Template Name: biographie
             </div>
         </div>
     </div>
-<div class="container-fluid biography__last mt-5" style="background-image: url(<?php the_field('last_image'); ?>);"></div>
+    <div class="container-fluid biography__last mt-5" style="background-image: url(<?php the_field('last_image'); ?>);"></div>
 
 <?php get_footer(); ?>

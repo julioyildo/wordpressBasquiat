@@ -19,6 +19,9 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  @media screen and (max-width: 768px){
+    padding: 0 20px;
+  }
 }
 
 #content {
@@ -36,6 +39,9 @@ header {
     width: 60px;
     margin-bottom: 10px;
     z-index: 600;
+    @media screen and (max-width: 768px){
+      width: 50px;
+    }
 
     margin-top: -3px;
   }
@@ -79,6 +85,9 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
+    @media screen and (max-width: 768px){
+      font-size: .8rem;
+    }
   }
 }
 
@@ -86,41 +95,41 @@ header {
 .menu-wrapper {
   position: fixed;
   top: 30px;
-  right: 10px;
+  right: 0;
   bottom:30px;
-  width: 40%;
+  width: 50%;
   height: 100vh;
   background: #fefefe;
   z-index: 50;
-  color: red;
-  display: none;
-  opacity: 0;
-  will-change: opacity;
-  transition-property:  opacity;
-  transition-duration: .7s;
-  transition-timing-function: ease;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  @media screen and (max-width: 768px){
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+}
+.menu-hidden{
+  transform: translateX(100%);
 }
 .menu-wrapper  .menu-wrapper__list {
-  width: 50%;
-  height: 100%;
+  width: 80%;
   margin: auto;
-  text-align: center;
 
   .menu-menu-entete-container {
-    height: 100%;
     width: 100%;
+    text-align: right;
 
     .menu_header {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
       color: #000;
       font-family: 'Poppins', sans-serif;
+      font-weight: 700;
       font-size: 4rem;
-
-
+      line-height: 80px;
+      margin-top: 50%;
+      @media screen and (max-width: 768px){
+        font-size: 3rem;
+      }
 
       li {
         position: relative;
@@ -137,9 +146,9 @@ header {
       li a:before{
         content: '';
         position: absolute;
-        left: 0;
+        right: 0;
         bottom: 0;
-        width: 100%;
+        width: 50%;
         height: 70%;
         background: #E9C22A;
         z-index: -1;
@@ -149,7 +158,9 @@ header {
         transition-property: transform;
         transition-duration: .2s;
         transition-timing-function: ease-in-out;
-
+        @media screen and (max-width: 768px){
+          width: 60%;
+        }
       }
       li a:hover:before {
         transform: scaleX(1);
@@ -180,8 +191,11 @@ header.header--open {
     }
   }
   .menu-wrapper{
-    display: block;
-    opacity: 1;
+    transform: translateX(0%);
   }
 }
-
+.logo img{
+  @media screen and (max-width: 768px){
+    width: 70%;
+  }
+}

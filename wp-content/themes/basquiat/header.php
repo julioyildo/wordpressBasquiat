@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- Appel du fichier style.css de notre thème -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -30,19 +30,19 @@
             <div class="line line-outer"></div>
             <p class="menu-name">MENU</p>
         </div>
-        <div class="menu-wrapper menu-hidden">
+        <div class="menu-wrapper menu-hidden col-md-6">
 
             <div class="menu-wrapper__list">
-            <?php
-            $args=array(
-                'theme_location' => 'header', // nom du slug
-                'menu' => 'header_fr', // nom à donner cette occurence du menu
-                'menu_class' => 'menu_header', // class à attribuer au menu
-                'menu_id' => 'menu_id' // id à attribuer au menu
-                // voir les autres arguments possibles sur le codex
-            );
-            wp_nav_menu($args);
-            ?>
+                <?php
+                $args=array(
+                    'theme_location' => 'header', // nom du slug
+                    'menu' => 'header_fr', // nom à donner cette occurence du menu
+                    'menu_class' => 'menu_header', // class à attribuer au menu
+                    'menu_id' => 'menu_id' // id à attribuer au menu
+                    // voir les autres arguments possibles sur le codex
+                );
+                wp_nav_menu($args);
+                ?>
             </div>
         </div>
     </header>

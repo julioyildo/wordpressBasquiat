@@ -35,16 +35,16 @@ sr.reveal('.citation__content', { duration: 1000, origin: 'bottom', viewFactor: 
 
 
 
-sr.reveal('.perceverant-content-img', { duration: 2000, origin: 'bottom', viewFactor: 0.4, reset: false , scale:1.2});
+sr.reveal('.perceverant-content-img', { duration: 1000, origin: 'bottom', viewFactor: 0.4, reset: false , scale:1.2});
 
-sr.reveal('.home-perceverant-text-wrapper', { duration: 3000, origin: 'bottom', viewFactor: 0.9, reset: false , scale:1.5});
-
-
+sr.reveal('.home-perceverant-text-wrapper', { duration: 1000, origin: 'bottom', viewFactor: 0.9, reset: false , scale:1.5});
 
 
-sr.reveal('.home-revolution-text-wrapper', { duration: 1800, origin: 'bottom', viewFactor: 0.4, reset: false , scale:1.2});
 
-sr.reveal('.revolution-content-img', { duration: 3000, origin: 'ti', viewFactor: 0.9, reset: false , scale:1.2});
+
+sr.reveal('.home-revolution-text-wrapper', { duration: 1000, origin: 'bottom', viewFactor: 0.4, reset: false , scale:1.2});
+
+sr.reveal('.revolution-content-img', { duration: 1000, origin: 'ti', viewFactor: 0.9, reset: false , scale:1.2});
 
 
 
@@ -61,6 +61,29 @@ sr.reveal('.elSlide3', { duration: 2000, origin: 'bottom', viewFactor: 0.2, rese
 sr.reveal('.elSlide2', { duration: 2000, origin: 'bottom', viewFactor: 0.4, reset: false});
 
 sr.reveal('.elSlide1', { duration: 2000, origin: 'bottom', viewFactor: 0.6, reset: false});
+
+sr.reveal('.biography__intro', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__introContent', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1960text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1968text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1976text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1980text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1981text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1983text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1986text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1987text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
+sr.reveal('.biography__1988text', { duration: 1000, origin: 'bottom', viewFactor: 0.5, reset: false });
+
 
 
 
@@ -80,6 +103,3 @@ window.addEventListener('scroll', function parallax() {
 
 
 });
-
-
-
