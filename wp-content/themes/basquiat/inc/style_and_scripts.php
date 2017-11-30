@@ -7,7 +7,7 @@ function ajout_scripts() {
 // enregistrement d'un nouveau script
 //wp_register_script('bootstrap_script', JS_URL.'/bootstrap.min.js', array('jquery'),'1.1', true);
 //wp_enqueue_script('bootstrap_script');
-    
+
 wp_register_script('jquery_script', 'https://code.jquery.com/jquery-3.2.1.min.js', true);
 wp_enqueue_script('jquery_script');
 
