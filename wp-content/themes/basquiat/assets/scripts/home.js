@@ -2,7 +2,7 @@ console.log("ok")
 
 
 // Get the element to move on mousemove
-var homeIntroBkg = document.querySelector('.home-intro__bkg');
+var homeIntroBkg = document.querySelector('.intro-background-wrapper');
 var intro__content= document.querySelector('.intro__content');
 var citation__content= document.querySelector('.citation__content');
 var citation__titleBkg = document.querySelector('.citation__titleBkg');
@@ -14,7 +14,9 @@ var actuality__titleBkg = document.querySelector('.actuality__titleBkg');
 window.addEventListener('mousemove', function myFunction(e) {
     var x = e.clientX;    // Get the horizontal coordinate
     var y = e.clientY;
-    homeIntroBkg.style.transform = 'translateX(' + x/400 + '%) ' + 'translateY(' + y/120 + '%)';
+//    homeIntroBkg.style.transform = 'translateX(' + x/400 + '%) ' + 'translateY(' + y/120 + '%)';
+    homeIntroBkg.style.backgroundPosition = x/100 + '% ' + y/10 + '%';
+  
     intro__content.style.transform = 'translateX(-' + x/400 + '%) ' + 'translateY(-' + y/120 + '%)';
 });
 

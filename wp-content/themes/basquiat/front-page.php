@@ -34,33 +34,31 @@ get_header() ?>
 
         <section class="home-profile">
 
-            <div class="profil-content-wrapper ">
+          <div class="profil-content-wrapper ">
 
-                <div class="home-profile-text-wrapper ">
-                    <div class="home-profile-text-wrapper__text">
+            <div class="home-profile-text-wrapper ">
+              <div class="home-profile-text-wrapper__text">
 
-                        <?php if( get_field('title_biography') ): ?>
-                            <h1><?php the_field('title_biography'); ?></h1>
-                        <?php endif; ?>
+                <?php if( get_field('title_biography') ): ?>
+                    <h1><?php the_field('title_biography'); ?></h1>
+                <?php endif; ?>
 
-                        <?php if( get_field('content_biography') ): ?>
-                            <p><?php the_field('content_biography'); ?></p>
-                        <?php endif; ?>
-                    </div>
-                    <div class="thumbnail briography-image">
-                        <?php
-
-                        $image = get_field('biography_image');
-
-                        if( !empty($image) ): ?>
-
-                            <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-                        <?php endif; ?>
-                    </div>
-
-                </div>
-
+                <?php if( get_field('content_biography') ): ?>
+                    <p><?php the_field('content_biography'); ?></p>
+                <?php endif; ?>
+              </div>
             </div>
+            <div class="thumbnail briography-image">
+              <?php
+
+              $image = get_field('biography_image');
+
+              if( !empty($image) ): ?>
+
+                  <img class="img-fluid" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+              <?php endif; ?>
+            </div>
+          </div>
         </section>
         <div class="container">
 
@@ -230,7 +228,7 @@ get_header() ?>
                                     <?php
                                     if(has_post_thumbnail())
                                     {
-                                        the_post_thumbnail("hub_article_thumbnail");
+                                        the_post_thumbnail("home_post_thumbnail");
                                     }
                                     ?>
                                 </div>
