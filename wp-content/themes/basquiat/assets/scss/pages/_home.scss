@@ -24,6 +24,8 @@
 .intro-background-wrapper {
   position: relative;
   display: flex;
+  background-size: cover;
+  background-position: center;
   flex-direction: column;
   align-items: left;
   justify-content: center;
@@ -355,14 +357,19 @@
   }
 }
 
-.history__direction:hover {
-  color: #E3B721;
+.history__directionText a{
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-.actuality__direction__link:hover {
-  color: #E3B721;
-  text-decoration: none;
+.history__directionText:hover {
+  a{
+    color: #eec901;
+    padding-left: 5%;
+  }
+  .actuality__directionArrow{
+    padding-left: 5%;
+  }
 }
 
 .home-revolution .home-revolution-text-wrapper p {
@@ -564,8 +571,24 @@
   font-size: 2rem;
 }
 
+.actuality__directionText a{
+  text-decoration: none;
+  transition: all ease 0.3s;
+}
+
+.actuality__directionText:hover {
+  a{
+    color: #eec901;
+    padding-left: 5%;
+  }
+  .actuality__directionArrow{
+    padding-left: 5%;
+  }
+}
+
 .actuality__directionArrow {
   margin-bottom: 59px;
+  transition: all ease 0.3s;
 }
 
 .actuality__directionSeparator {
@@ -667,6 +690,20 @@
   text-align: center;
 }
 
+.blog__directionText a{
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blog__directionText:hover {
+  a{
+    color: #eec901;
+    padding-left: 5%;
+  }
+  .actuality__directionArrow{
+    padding-left: 5%;
+  }
+}
 
 // HOME FOOTER IMG
 .home__footer{
@@ -682,5 +719,3 @@
     height: auto;
   }
 }
-
-

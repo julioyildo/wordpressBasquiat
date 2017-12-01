@@ -13,7 +13,7 @@ Template Name:  blog
             <?php endif; ?>
         </div>
     </div>
-    <div class="actuality__articlesWrapper row ml-0 mb-5">
+    <div class="actuality__articlesWrapper row ml-0 mb-5 mt-5">
         <?php
         $args= array(
             'posts_per_page' => 6,
