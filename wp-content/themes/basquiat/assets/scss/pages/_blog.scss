@@ -1,9 +1,9 @@
 .blog__intro {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-}
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+ }
 .blog__intro:before{
   content:'';
   width: 100%;
@@ -34,4 +34,8 @@
     text-transform: uppercase;
     line-height: 1.2;
   }
+}
+.page__navigation h2{
+  font-size: 1rem;
+  color: #fafafa;
 }

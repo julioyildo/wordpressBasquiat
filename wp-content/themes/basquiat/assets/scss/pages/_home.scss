@@ -705,17 +705,9 @@
   }
 }
 
-// HOME FOOTER IMG
-.home__footer{
-  overflow: hidden;
-}
-.home__footerImg{
+.home__last {
   width: 100%;
-  transform-origin: center;
-  transform: scale(1.5);
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+  height: 120vh;
+  background-size: cover;
+  background-position: center;
 }

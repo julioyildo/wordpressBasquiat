@@ -661,16 +661,11 @@ a {
 .blog__directionText:hover .actuality__directionArrow {
   padding-left: 5%; }
 
-.home__footer {
-  overflow: hidden; }
-
-.home__footerImg {
+.home__last {
   width: 100%;
-  transform-origin: center;
-  transform: scale(1.5); }
-  .home__footerImg img {
-    width: 100%;
-    height: auto; }
+  height: 120vh;
+  background-size: cover;
+  background-position: center; }
 
 .biography__intro {
   width: 100%;
@@ -1253,6 +1248,10 @@ a {
     font-weight: 300;
     text-transform: uppercase;
     line-height: 1.2; }
+
+.page__navigation h2 {
+  font-size: 1rem;
+  color: #fafafa; }
 
 .contact__items {
   font-size: 1rem;

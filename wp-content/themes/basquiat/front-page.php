@@ -262,12 +262,7 @@ get_header() ?>
         </section>
     </div>
 
-    <div class="container-fluid home__footer">
-        <section class="home__footerImg" >
-            <img class="img-fluid" src="<?php echo IMAGES_URL?>/home__footerImg.png" alt="">
-
-        </section>
-    </div>
+    <div class="container-fluid home__last mt-5" style="background-image: url(<?php the_field('last_image'); ?>);"></div>
     <!-- /container-->
     </div> <!-- /content -->
 <?php get_footer(); ?>
