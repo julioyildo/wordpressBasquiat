@@ -22,14 +22,12 @@
         ?>
       </div>
     </div>
-    <div class="gallery__content">
-        <?php if (have_posts()) : ?>
-            <?php while (have_posts()) : the_post(); ?>
-              <div class="gallery__content">
-                <?php the_content(); ?>
-              </div>
-            <?php endwhile; ?>
-        <?php endif; ?>
-    </div>
+    <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
+          <div class="gallery__content">
+            <?php the_content(); ?>
+          </div>
+        <?php endwhile; ?>
+    <?php endif; ?>
   </section>
 <?php get_footer(); ?>

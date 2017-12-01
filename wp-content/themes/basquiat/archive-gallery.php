@@ -6,7 +6,7 @@
       </div>
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6">
             <article class="galleries__listItem">
               <a href="<?php the_permalink(); ?>">
                 <?php the_post_thumbnail( 'gallery_list_thumbnail' ); ?>
