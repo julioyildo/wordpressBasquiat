@@ -4,11 +4,13 @@ Template Name:  contact
 */
 ?>
 <?php get_header(); ?>
-    <div class="container-fluid contact__intro">
-        <div class="contact__imageWrapper" style="background-image: url(<?php the_field('contact_image'); ?>);"></div>
-        <div class="col contact__text">
-            <?php if( get_field('contact_intro') ): ?>
-                <h1><?php the_field('contact_intro'); ?></h1>
+    <div class="container-fluid contact__intro" style="background-image: url(<?php the_field('contact_image'); ?>);">
+        <div class="contact__introContent">
+            <?php if( get_field('title_page') ): ?>
+                <h1><?php the_field('title_page'); ?></h1>
+            <?php endif; ?>
+            <?php if( get_field('sub_title') ): ?>
+                <p><?php the_field('sub_title'); ?></p>
             <?php endif; ?>
         </div>
     </div>

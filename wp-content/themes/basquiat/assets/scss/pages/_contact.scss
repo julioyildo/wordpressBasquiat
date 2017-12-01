@@ -23,15 +23,27 @@
   background: #E9C22A !important;
   color: #fafafa !important;
 }
-.contact__imageWrapper{
-  height: 700px;
+.contact__intro {
   width: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
 }
-.contact__text h1{
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
+.contact__introContent {
+  padding-top: 20%;
+  z-index: 1;
+  h1 {
+    color: #fefefe;
+    font-size: 80px;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 63px;
+  }
+  p {
+    color: #fefefe;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
 }
